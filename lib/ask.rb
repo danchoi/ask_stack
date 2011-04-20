@@ -20,6 +20,7 @@ module StackOverflow
       @sel = SeleniumRc.new(@url)
       @sel.browser.start_new_browser_session
       @browser = @sel.browser
+      browser.highlight_located_element=true
       @config = config
     end
 
@@ -46,35 +47,10 @@ module StackOverflow
     end
 
 
+    private
+
     def at_google_signin?
       browser.get_location =~ %r{^https://www.google.com/accounts/ServiceLogin}
-    end
-
-    def run(url=@url)
-      @output = {}
-      @output[:url] = url
-      browser.open url
-      browser.highlight_located_element=true
-      $stderr.puts browser.location # url of page
-      test
-      @output
-    end
-
-    def test
-      puts "Signing in"
-      browser.run_script "openid.signin('google')"
-
-      return 
-      browser.click "xpath=#{node.path}"
-      sleep 10
-      return
-      doc = Nokogiri::HTML.parse(html)
-      if doc.search('h2').detect {|x| x.inner_text =~ /404 error/i}
-        raise PageNotFound
-      end
-      nodes = doc.search('div.gr div.relative div.info')
-      puts "Extracting title details from #{nodes.size} nodes"
-      @output[:title] = meta
     end
 
     def ascii(s)
