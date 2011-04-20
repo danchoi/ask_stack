@@ -34,8 +34,8 @@ module StackOverflow
         puts "Error: Not the Google signin page. Tomfoolery afoot."
         exit
       end
+      # TODO separate this Open ID provider signin to pluggable class
       puts "On Google signin page. Signing into Google"
-      puts page.get_all_fields.inspect
       page.type "Email", config['username']
       page.type "Passwd", config['password']
       puts "Signing in..."
