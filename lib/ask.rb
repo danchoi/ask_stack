@@ -26,6 +26,7 @@ module StackOverflow
       browser.start_new_browser_session
       browser.highlight_located_element=true
       browser.set_browser_log_level 'debug'
+      browser.set_speed 10
       @config = config
     end
 
@@ -40,9 +41,11 @@ module StackOverflow
     def fill_form
       page.type "name=title", "How do you find out where the gems are installed?"
       page.focus 'name=post-text'
-      page.type "name=post-text", "How do you find out where the gems are installed?"
+      page.type "name=post-text", "How do you find out which directory the gems are installed in when you're using RVM?"
+      sleep 1
       page.focus 'name=tagnames'
-      page.type "name=tagnames", "ruby ru"
+      sleep 1
+      page.type_keys "name=tagnames", "ruby ru"
     end
 
     def login
