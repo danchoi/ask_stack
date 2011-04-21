@@ -1,10 +1,23 @@
 #!/usr/bin/env ruby
 require 'ask_stack'
 
+
+if `which java` == ''
+  abort "ask_stack require Java. Please install Java."
+end
+
 if ARGV.first == '-s'
   jarfile = File.join(File.dirname(__FILE__), '..', 'vendor/selenium-server-standalone-2.0b3.jar')
   exec("java -jar #{jarfile}")
   exit
 end
 
-AskStack.run
+if STDIN.tty?
+  abort "Usage: ask_stack < question.txt\n\nPlease see README https://github.com/danchoi/ask_stack"
+end
+
+begin
+  AskStack.run
+rescue Errno::ECONNREFUSED
+  abort "Selenium stand-alone server appears not to be running.\nRun with ask_stack -s in another window."
+end
