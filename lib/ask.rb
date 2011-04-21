@@ -5,7 +5,7 @@ require 'iconv'
 require 'date'
 require 'selenium/client'
 
-class AskStackOverflow
+class AskStack
 
   attr_accessor :url, :sel, :browser, :config
   alias :page :browser

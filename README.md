@@ -3,12 +3,11 @@
 This is an experimental program that lets you compose a Stack Overflow
 question in a text file and then automate the submission of it.
 
-The reason I started this project is that I really dislike filling in
-web forms.  They feel retarded after you have gotten used to using Vim
-and living in the Unix shell environment.
+The reason I started this experiment is simple.  I hate filling in web
+forms.  They feel pretty retarded after you have gotten used to using
+Vim and living in the Unix shell environment.  
 
-This project is alpha and is really only a proof of concept at this
-stage.
+This project is alpha and is only a proof of concept at this stage.
 
 ## Instructions
 
@@ -23,7 +22,8 @@ be running ask_stack.rb in.
 
 The next step is to compose your question in a text file.
 
-The text file should follow this format:
+The text file (let's call this one question.txt) should follow this
+format:
 
     How to use omniauth to make authenticated calls to services?
 
@@ -48,14 +48,16 @@ The text file should follow this format:
 The first line is the title of the question, then there is a blank line,
 and then the body of the question follows. The last line of the text
 file should contain your tags for the question, separated by spaces.
+The body of the question can contain any of the special markup and
+formatting that Stack Overflow accepts.
 
-There is no autocompletion of tags or auto-suggestion of similar
-questions yet.
+Note there is no autocompletion of tags or auto-suggestion of similar
+questions (yet).  So try to choose tags that you've seen before on S.O.
 
 Finally, before submitting your question, you need to put your OpenID
 credentials in a ask_stack.yml file in the directory where you're going
-to run the program from. For the alpha version, only Google is
-accepted as an OpenID provider.
+to run the program from. For this proof of concept version, only Google
+is accepted as an OpenID provider.
 
 The `ask_stack.yml` should look like this:
 
@@ -64,7 +66,7 @@ The `ask_stack.yml` should look like this:
 
 OK now you can try submitting your question like this.
 
-    ask_stack < question.txt
+    ruby lib/ask_stack.rb < question.txt
 
 
 
