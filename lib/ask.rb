@@ -66,9 +66,6 @@ module StackOverflow
       browser.get_location =~ %r{^https://www.google.com/accounts/ServiceLogin}
     end
 
-    def ascii(s)
-      Iconv.conv("US-ASCII//translit/ignore", 'utf-8', s)
-    end
   end
 end
 
