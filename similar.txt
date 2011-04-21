@@ -1,0 +1,120 @@
+<div class="system-alert">The question you're asking appears subjective and is likely to be closed.</div><label>Related Questions</label><div style="height:150px; overflow-y:scroll; overflow-x:clip;">
+<div class="answer-summary"><a href="/questions/267237/whats-the-best-way-to-unit-test-protected-private-methods-in-ruby" title="28 votes"><div class="answer-votes default">28</div></a><div class="answer-link"style="width:90%"><a href="/questions/267237/whats-the-best-way-to-unit-test-protected-private-methods-in-ruby" class="question-hyperlink" title="What's the best way to unit test protected and private methods in Ruby, using the standard Ruby Test::Unit framework?
+
+I'm sure somebody will pipe up and dogmatically assert that &quot;you should only unit  &hellip; ">What&#39;s the best way to unit test protected &amp; private methods in Ruby?</a> <span title="11 answers">(11)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/4882822/whats-the-best-way-to-test-application-api-library-in-ruby" title="0 votes"><div class="answer-votes default">0</div></a><div class="answer-link"style="width:90%"><a href="/questions/4882822/whats-the-best-way-to-test-application-api-library-in-ruby" class="question-hyperlink" title="Hello everyone,
+
+Im developing a ruby API library for some web application (not rails based).
+Library (in short overview) consists of the following objects:
+
+
+Client - main api class
+Request - module  &hellip; ">What&#39;s the best way to test application API library in Ruby?</a> <span title="1 answers">(1)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/5169706/what-is-the-best-way-to-develop-and-test-cache-in-a-ruby-on-rails-application" title="0 votes, with an accepted answer"><div class="answer-votes answered-accepted default">0</div></a><div class="answer-link"style="width:90%"><a href="/questions/5169706/what-is-the-best-way-to-develop-and-test-cache-in-a-ruby-on-rails-application" class="question-hyperlink" title="I am using Ruby on Rails 3 and I would like to start &quot;to code&quot; the cache system.
+
+I am working on localhost in development mode. I heard that working in development mode it is possible to face some  &hellip; ">What is the best way to develop and test cache in a Ruby on rails application?</a> <span title="1 answers">(1)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/2082970/whats-the-best-way-to-test-this" title="6 votes, with an accepted answer"><div class="answer-votes answered-accepted default">6</div></a><div class="answer-link"style="width:90%"><a href="/questions/2082970/whats-the-best-way-to-test-this" class="question-hyperlink" title="I'm going through the EdgeCase Ruby Koans.  In about_dice_project.rb, there's a test called &quot;test_dice_values_should_change_between_rolls&quot;, which is straightforward:
+
+  def  &hellip; ">What&#39;s the best way to test this?</a> <span title="5 answers">(5)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/6806/what-is-the-best-way-to-learn-ruby" title="41 votes, with an accepted answer"><div class="answer-votes answered-accepted default">41</div></a><div class="answer-link"style="width:90%"><a href="/questions/6806/what-is-the-best-way-to-learn-ruby" class="question-hyperlink" title="How do I go about learning Ruby quickly and easily without buying expensive programming books?">What is the best way to learn Ruby?</a> <span title="30 answers">(30)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/274619/what-is-the-best-way-to-debug-a-nunit-test" title="7 votes"><div class="answer-votes default">7</div></a><div class="answer-link"style="width:90%"><a href="/questions/274619/what-is-the-best-way-to-debug-a-nunit-test" class="question-hyperlink" title="My platform: Visual C# 2008 Express Edition with NUnit 2.2.7
+
+I have a solution with my code in one project and my NUnit unit tests in a different project in the same solution.
+
+I have been struggling  &hellip; ">What is the best way to debug a NUnit test?</a> <span title="6 answers">(6)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/367222/what-is-the-best-way-to-test-mailing-list-software" title="4 votes, with an accepted answer"><div class="answer-votes answered-accepted default">4</div></a><div class="answer-link"style="width:90%"><a href="/questions/367222/what-is-the-best-way-to-test-mailing-list-software" class="question-hyperlink" title="I recently wrote mailing list software in Ruby On Rails.  I would like to get some expert advice on the best way to test it.  For example, it would be cool if I could write a script generate 10,000  &hellip; ">What is the best way to test mailing list software?</a> <span title="3 answers">(3)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/400552/what-is-the-best-way-to-unit-test-an-asynchronous-method" title="8 votes, with an accepted answer"><div class="answer-votes answered-accepted default">8</div></a><div class="answer-link"style="width:90%"><a href="/questions/400552/what-is-the-best-way-to-unit-test-an-asynchronous-method" class="question-hyperlink" title="I can't seem to find a .NET answer to this problem, which I would have thought would be fairly common.
+What is the best pattern for unit testing an asynchronous method?
+
+Obviously I need to call the  &hellip; ">What is the best way to unit test an asynchronous method?</a> <span title="3 answers">(3)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/411257/what-is-the-best-way-to-test-gwt-code" title="9 votes"><div class="answer-votes default">9</div></a><div class="answer-link"style="width:90%"><a href="/questions/411257/what-is-the-best-way-to-test-gwt-code" class="question-hyperlink" title="What is the best way to test GWT code?
+
+GWTTestCase in hosted mode is too slow and none of the mocking frameworks work.
+
+Currently we are following MVC as suggested in  &hellip; ">What is the best way to test GWT code</a> <span title="4 answers">(4)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/620333/whats-the-best-way-to-test-wcf-services" title="14 votes, with an accepted answer"><div class="answer-votes answered-accepted default">14</div></a><div class="answer-link"style="width:90%"><a href="/questions/620333/whats-the-best-way-to-test-wcf-services" class="question-hyperlink" title="I've used this tool that microsoft ships with visual studio because it's quick and dirty
+
+http://msdn.microsoft.com/en-us/library/bb552364.aspx
+
+But it's kinda clunky and hard to work with.  Are there  &hellip; ">What&#39;s the best way to test WCF services?</a> <span title="8 answers">(8)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/762997/whats-the-best-way-to-test-an-atom-server" title="1 votes, with an accepted answer"><div class="answer-votes answered-accepted default">1</div></a><div class="answer-link"style="width:90%"><a href="/questions/762997/whats-the-best-way-to-test-an-atom-server" class="question-hyperlink" title="Hi all,
+I'm setting up an Atom server to act as a REST-ful interface to my backend database.
+
+I'd like to put together some tests to ensure:
+- the output is Atom and AtomPub compliant
+- the data  &hellip; ">What&#39;s the best way to test an Atom Server?</a> <span title="1 answers">(1)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/4405650/mvccontrib-whats-the-best-way-to-test-xmlresult" title="0 votes, with an accepted answer"><div class="answer-votes answered-accepted default">0</div></a><div class="answer-link"style="width:90%"><a href="/questions/4405650/mvccontrib-whats-the-best-way-to-test-xmlresult" class="question-hyperlink" title="I am just getting going with MVCContrib. I have a controller action that returns an XMLResult. I would like write unit tests around the XMLResult. I have never used the MVCContrib's TestHelper. How  &hellip; ">MVCContrib - What&#39;s the best way to test XMLResult?</a> <span title="1 answers">(1)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/4622620/what-is-the-best-way-to-test-a-rails-app" title="5 votes, with an accepted answer"><div class="answer-votes answered-accepted default">5</div></a><div class="answer-link"style="width:90%"><a href="/questions/4622620/what-is-the-best-way-to-test-a-rails-app" class="question-hyperlink" title="I am new to testing in Rails. I have decided to learn Test Driven Development and hence researching on how to go about it in rails.
+
+I started out with Test::Unit and soon came to know that better  &hellip; ">What is the best way to test a rails app?</a> <span title="3 answers">(3)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/47833/in-c-what-is-the-best-way-to-test-if-a-dataset-is-empty" title="5 votes, with an accepted answer"><div class="answer-votes answered-accepted default">5</div></a><div class="answer-link"style="width:90%"><a href="/questions/47833/in-c-what-is-the-best-way-to-test-if-a-dataset-is-empty" class="question-hyperlink" title="I know you can look at the row.count or tables.count, but are there other ways to tell if a dataset is empty?
+">In C#, what is the best way to test if a dataset is empty?</a> <span title="6 answers">(6)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/147362/what-is-the-best-way-to-test-a-stored-procedure" title="9 votes, with an accepted answer"><div class="answer-votes answered-accepted default">9</div></a><div class="answer-link"style="width:90%"><a href="/questions/147362/what-is-the-best-way-to-test-a-stored-procedure" class="question-hyperlink" title="Like many companies that require all access be through stored procedures, we seem to have a lot of business logic locked away in sprocs.  These things are just plain hard to test, and some of them  &hellip; ">What is the best way to test a stored procedure?</a> <span title="7 answers">(7)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/3298147/whats-the-best-way-to-test-cross-browser-compatibility" title="1 votes, with an accepted answer"><div class="answer-votes answered-accepted default">1</div></a><div class="answer-link"style="width:90%"><a href="/questions/3298147/whats-the-best-way-to-test-cross-browser-compatibility" class="question-hyperlink" title="Since the portable versions of Internet Explorer are no longer supported (and never fully worked) I'm trying to find a way to test sites in a number of different browsers.
+
+The lag on something like  &hellip; ">What&#39;s the best way to test cross-browser compatibility?</a> <span title="4 answers">(4)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/39567/what-is-the-best-way-to-convert-an-array-to-a-hash-in-ruby" title="14 votes, with an accepted answer"><div class="answer-votes answered-accepted default">14</div></a><div class="answer-link"style="width:90%"><a href="/questions/39567/what-is-the-best-way-to-convert-an-array-to-a-hash-in-ruby" class="question-hyperlink" title="In Ruby, given an array in one of the following forms...
+
+[apple, 1, banana, 2]
+[[apple, 1], [banana, 2]]
+
+
+...what is the best way to convert this into a hash in the form of...
+
+{apple =&gt; 1,  &hellip; ">What is the best way to convert an array to a hash in Ruby</a> <span title="6 answers">(6)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/67890/whats-the-best-way-to-hash-a-url-in-ruby" title="4 votes, with an accepted answer"><div class="answer-votes answered-accepted default">4</div></a><div class="answer-link"style="width:90%"><a href="/questions/67890/whats-the-best-way-to-hash-a-url-in-ruby" class="question-hyperlink" title="I'm writing a web app that points to external links. I'm looking to create a non-sequential, non-guessable id for each document that I can use in the URL. I did the obvious thing: treating the url as  &hellip; ">What&#39;s the best way to hash a url in ruby?</a> <span title="3 answers">(3)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/137605/what-is-the-best-way-to-parse-a-web-page-in-ruby" title="9 votes, with an accepted answer"><div class="answer-votes answered-accepted default">9</div></a><div class="answer-link"style="width:90%"><a href="/questions/137605/what-is-the-best-way-to-parse-a-web-page-in-ruby" class="question-hyperlink" title="I have been looking at XML and HTML libraries on rubyforge for a simple way to pull data out of a web page.  For example if I want to parse a user page on stackoverflow how can I get the data into a  &hellip; ">What is the best way to parse a web page in Ruby?</a> <span title="4 answers">(4)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/150731/what-is-the-best-way-to-write-to-a-file-in-ruby" title="4 votes, with an accepted answer"><div class="answer-votes answered-accepted default">4</div></a><div class="answer-link"style="width:90%"><a href="/questions/150731/what-is-the-best-way-to-write-to-a-file-in-ruby" class="question-hyperlink" title="I would like to write some data to a file in Ruby. What is the best way to do that?
+">What is the best way to write to a file in Ruby?</a> <span title="5 answers">(5)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/471445/what-is-the-best-way-to-load-ruby-classes-into-an-application" title="5 votes, with an accepted answer"><div class="answer-votes answered-accepted default">5</div></a><div class="answer-link"style="width:90%"><a href="/questions/471445/what-is-the-best-way-to-load-ruby-classes-into-an-application" class="question-hyperlink" title="Currently I am loading Ruby classes into each class file using the require command, for example:
+
+require File.join(File.dirname(__FILE__), 'observation_worker')
+require  &hellip; ">What is the best way to load Ruby classes into an application?</a> <span title="5 answers">(5)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/694547/what-is-the-best-way-for-having-a-ruby-service-on-rails" title="1 votes, with an accepted answer"><div class="answer-votes answered-accepted default">1</div></a><div class="answer-link"style="width:90%"><a href="/questions/694547/what-is-the-best-way-for-having-a-ruby-service-on-rails" class="question-hyperlink" title="I need to run a ruby-script as a service. The script needs access to the ActiveRecords of a rails-app.
+
+What would be the best way? A rake task? How can it be started as a service on both windows and  &hellip; ">What is the best way for having a ruby service on rails?</a> <span title="3 answers">(3)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/784943/what-is-the-best-way-to-remap-a-hash-in-ruby" title="2 votes, with an accepted answer"><div class="answer-votes answered-accepted default">2</div></a><div class="answer-link"style="width:90%"><a href="/questions/784943/what-is-the-best-way-to-remap-a-hash-in-ruby" class="question-hyperlink" title="Is there a simple way of remapping a hash in ruby the following way:
+
+from:
+
+{:name =&gt; &quot;foo&quot;, :value =&gt; &quot;bar&quot;}
+
+
+to:
+
+{&quot;foo&quot; =&gt; &quot;bar&quot;}
+
+
+Preferably in a way that makes it simple to do this  &hellip; ">What is the best way to remap a Hash in Ruby?</a> <span title="3 answers">(3)</span></div>
+</div>
+<div class="answer-summary"><a href="/questions/880268/whats-the-best-way-in-ruby-to-average-sets-in-an-array" title="1 votes, with an accepted answer"><div class="answer-votes answered-accepted default">1</div></a><div class="answer-link"style="width:90%"><a href="/questions/880268/whats-the-best-way-in-ruby-to-average-sets-in-an-array" class="question-hyperlink" title="Given the following simple data set, what is the best way to average the values for the sets 0 25 53 and 80.
+
+  [[&quot;0&quot;, &quot;148.5&quot;],
+   [&quot;0&quot;, &quot;146.5&quot;],
+   [&quot;0&quot;, &quot;148.6&quot;],
+   [&quot;0&quot;, &quot;202.3&quot;],
+   [&quot;25&quot;,  &hellip; ">What&#39;s the best way in Ruby to average sets in an array?</a> <span title="2 answers">(2)</span></div>
+</div>
+</div>
