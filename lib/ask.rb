@@ -23,15 +23,16 @@ module StackOverflow
         :browser => "*firefox",
         :url => @url,
         :timeout_in_second => 60
-
       browser.start_new_browser_session
       browser.highlight_located_element=true
+      browser.set_browser_log_level 'debug'
       @config = config
     end
 
     def run
       login
-      ask
+      page.click "nav-askquestion", :wait_for => :page
+      sleep 60
       stop
     end
 
@@ -53,20 +54,11 @@ module StackOverflow
       page.click "signIn", :wait_for => :page
     end
 
-    def ask
-      save_cookie # for next time
-      page.click "nav-askquestion"
-    end
-
     def stop
       browser.close
       browser.stop
     end
 
-    def save_cookie
-      cookies = page.get_cookie
-      puts cookies.inspect
-    end
 
     private
 
