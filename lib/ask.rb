@@ -32,8 +32,17 @@ module StackOverflow
     def run
       login
       page.click "nav-askquestion", :wait_for => :page
+      fill_form
       sleep 60
       stop
+    end
+
+    def fill_form
+      page.type "name=title", "How do you find out where the gems are installed?"
+      page.focus 'name=post-text'
+      page.type "name=post-text", "How do you find out where the gems are installed?"
+      page.focus 'name=tagnames'
+      page.type "name=tagnames", "ruby ru"
     end
 
     def login
