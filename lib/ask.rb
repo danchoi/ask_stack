@@ -31,18 +31,29 @@ class AskStack
     login
     page.click "nav-askquestion", :wait_for => :page
     fill_form
-    sleep 60
+    sleep 3
+    submit
+    sleep 2
+    puts "You question is posted at this URL" 
+    puts browser.get_location 
     stop
+    puts "Done"
   end
 
   def fill_form
-    page.type "name=title", "How do you find out where the gems are installed?"
+    puts "Filling in question form"
+    page.type "name=title", config[:question][:title]
     page.focus 'name=post-text'
-    sleep 3
-    page.type "name=post-text", "How do you find out which directory the gems are installed in when you're using RVM?"
+    sleep 1
+    page.type "name=post-text", config[:question][:body]
     page.type_keys "name=post-text", " "
-    sleep 2
-    page.type "name=tagnames", "ruby rvm"
+    sleep 1
+    page.type "name=tagnames", config[:question][:tags]
+  end
+
+  def submit
+    puts "Submitting"
+    page.click 'id=submit-button', :wait_for => :page
   end
 
   def login
@@ -92,13 +103,16 @@ class AskStack
   def at_google_signin?
     browser.get_location =~ %r{^https://www.google.com/accounts/ServiceLogin}
   end
-
-
 end
 
 if __FILE__ == $0
-  creds = YAML::load(File.read("askstack.yml"))
-  so = AskStack.new creds
+  config = YAML::load(File.read("ask_stack.yml"))
+  raw_question = STDIN.read.strip
+  title = raw_question.split(/^\s*$/)[0]
+  tags = raw_question.split(/^\s*$/)[-1]
+  body = raw_question.split(/^\s*$/)[1..-2].join("\n")
+  config[:question] = {title: title, body: body, tags: tags}
+  so = AskStack.new config
   so.run
 end
 

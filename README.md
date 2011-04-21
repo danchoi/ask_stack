@@ -66,7 +66,7 @@ The `ask_stack.yml` should look like this:
     username: danchoi@gmail.com
     password: secret
 
-OK now you can try submitting your question like this.
+Now you can try submitting your question like this.
 
     ruby lib/ask_stack.rb < question.txt
 
