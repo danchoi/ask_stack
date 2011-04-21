@@ -26,11 +26,11 @@ module StackOverflow
       browser.start_new_browser_session
       browser.highlight_located_element=true
       browser.set_browser_log_level 'debug'
-      browser.set_speed 10
       @config = config
     end
 
     def run
+      browser.window_maximize
       login
       page.click "nav-askquestion", :wait_for => :page
       fill_form
@@ -45,7 +45,9 @@ module StackOverflow
       sleep 1
       page.focus 'name=tagnames'
       sleep 1
+      browser.set_speed 100
       page.type_keys "name=tagnames", "ruby ru"
+      browser.set_speed 1
     end
 
     def login
