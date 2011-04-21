@@ -1,9 +1,9 @@
 require 'yaml'
-require 'selenium_rc'
 require 'nokogiri'
 require 'uri'
 require 'iconv'
 require 'date'
+require 'selenium/client'
 
 module StackOverflow
   class Ask
@@ -17,11 +17,22 @@ module StackOverflow
 
     def initialize(config)
       @url = LOGIN_URL
-      @sel = SeleniumRc.new(@url)
-      @sel.browser.start_new_browser_session
-      @browser = @sel.browser
+      @browser = Selenium::Client::Driver.new \
+        :host => "localhost",
+        :port => 4444,
+        :browser => "*firefox",
+        :url => @url,
+        :timeout_in_second => 60
+
+      browser.start_new_browser_session
       browser.highlight_located_element=true
       @config = config
+    end
+
+    def run
+      login
+      ask
+      stop
     end
 
     def login
@@ -43,9 +54,19 @@ module StackOverflow
     end
 
     def ask
+      save_cookie # for next time
       page.click "nav-askquestion"
     end
 
+    def stop
+      browser.close
+      browser.stop
+    end
+
+    def save_cookie
+      cookies = page.get_cookie
+      puts cookies.inspect
+    end
 
     private
 
@@ -62,8 +83,7 @@ end
 if __FILE__ == $0
   creds = YAML::load(File.read("gmail.yml"))
   so = StackOverflow::Ask.new creds
-  so.login
-  so.ask
+  so.run
 end
 
 
