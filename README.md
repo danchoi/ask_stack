@@ -18,7 +18,7 @@ You can start SeleniumRC with
     java -jar vendor/selenium-server-standalone-2.0b3.jar 
 
 This should be done in a different terminal window from the one you will
-be running ask_stack.rb in.  You only have to start up the Selenium
+be running `ask_stack` in.  You only have to start up the Selenium
 standalone server once.  You can leave this running in the background
 indefinitely. 
 
@@ -68,7 +68,7 @@ The `ask_stack.yml` should look like this:
 
 Now you can try submitting your question like this.
 
-    ruby lib/ask_stack.rb < question.txt
+    ask_stack < question.txt
 
 
 

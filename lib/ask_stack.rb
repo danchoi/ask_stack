@@ -98,6 +98,17 @@ class AskStack
   end
 
 
+  def self.run
+    config = YAML::load(File.read("ask_stack.yml"))
+    raw_question = STDIN.read.strip
+    title = raw_question.split(/^\s*$/)[0]
+    tags = raw_question.split(/^\s*$/)[-1]
+    body = raw_question.split(/^\s*$/)[1..-2].join("\n")
+    config[:question] = {title: title, body: body, tags: tags}
+    so = AskStack.new config
+    so.run
+  end
+
   private
 
   def at_google_signin?
@@ -106,13 +117,6 @@ class AskStack
 end
 
 if __FILE__ == $0
-  config = YAML::load(File.read("ask_stack.yml"))
-  raw_question = STDIN.read.strip
-  title = raw_question.split(/^\s*$/)[0]
-  tags = raw_question.split(/^\s*$/)[-1]
-  body = raw_question.split(/^\s*$/)[1..-2].join("\n")
-  config[:question] = {title: title, body: body, tags: tags}
-  so = AskStack.new config
-  so.run
+  AskStack.run
 end
 
