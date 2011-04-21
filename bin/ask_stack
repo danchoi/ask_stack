@@ -1,3 +1,10 @@
 #!/usr/bin/env ruby
 require 'ask_stack'
+
+if ARGV.first == '-s'
+  jarfile = File.join(File.dirname(__FILE__), '..', 'vendor/selenium-server-standalone-2.0b3.jar')
+  exec("java -jar #{jarfile}")
+  exit
+end
+
 AskStack.run

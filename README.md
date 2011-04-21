@@ -15,7 +15,7 @@ First you have to fire up an instance of SeleniumRC on your computer.
 
 You can start SeleniumRC with
 
-    java -jar vendor/selenium-server-standalone-2.0b3.jar 
+    ask_stack -s
 
 This should be done in a different terminal window from the one you will
 be running `ask_stack` in.  You only have to start up the Selenium
