@@ -4,8 +4,8 @@ This is an experimental program that lets you compose a Stack Overflow
 question in a text file and then automate the submission of it.
 
 The reason I started this experiment is simple.  I hate filling in web
-forms.  They feel pretty retarded after you have gotten used to using
-Vim and living in the Unix shell environment.  
+forms.  They feel retarded as well as unhealthy after you have gotten
+used to using Vim and maneuvering in the Unix shell environment.  
 
 This project is alpha and is only a proof of concept at this stage.
 
@@ -18,7 +18,9 @@ You can start SeleniumRC with
     java -jar vendor/selenium-server-standalone-2.0b3.jar 
 
 This should be done in a different terminal window from the one you will
-be running ask_stack.rb in.
+be running ask_stack.rb in.  You only have to start up the Selenium
+standalone server once.  You can leave this running in the background
+indefinitely. 
 
 The next step is to compose your question in a text file.
 

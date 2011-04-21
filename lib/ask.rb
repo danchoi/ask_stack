@@ -98,7 +98,7 @@ end
 
 if __FILE__ == $0
   creds = YAML::load(File.read("askstack.yml"))
-  so = AskStackOverflow.new creds
+  so = AskStack.new creds
   so.run
 end
 
