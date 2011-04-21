@@ -59,6 +59,21 @@ module StackOverflow
       browser.stop
     end
 
+    # http://stackoverflow.com/search/titles?like=what%20is%20the%20best%20way%20to%20test%20in%20ruby%3F&_=1303413037898
+    # returns html frag, see similar.txt
+    #
+    def similar_questions
+
+    end
+
+    # http://stackoverflow.com/filter/tags?callback=jQuery151044475735054025645_1303413170293&q=ruby&limit=6&timestamp=1303413245025&_=1303413245028
+    # sample resp:
+    #
+    # jQuery151044475735054025645_1303413170293("ruby|22235\nruby-on-rails|36488\nruby-on-rails-3|7173\nrubygems|1569\njruby|585\nruby-on-rails-plugins|495");[choi kaja~]$
+    def complete_tags
+
+    end
+
 
     private
 
