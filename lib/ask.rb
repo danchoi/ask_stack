@@ -41,13 +41,11 @@ module StackOverflow
     def fill_form
       page.type "name=title", "How do you find out where the gems are installed?"
       page.focus 'name=post-text'
+      sleep 3
       page.type "name=post-text", "How do you find out which directory the gems are installed in when you're using RVM?"
-      sleep 1
-      page.focus 'name=tagnames'
-      sleep 1
-      browser.set_speed 100
-      page.type_keys "name=tagnames", "ruby ru"
-      browser.set_speed 1
+      page.type_keys "name=post-text", " "
+      sleep 2
+      page.type "name=tagnames", "ruby rvm"
     end
 
     def login
