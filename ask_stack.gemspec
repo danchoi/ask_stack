@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["dhchoi@gmail.com"]
   s.homepage    = "https://github.com/danchoi/ask_stack"
   s.summary     = %q{Post questions to StackOverflow from the unix command line}
-  s.description = %q{This project is alpha}
+  s.description = %q{Post questions to StackOverflow from the unix command line}
 
   s.rubyforge_project = "ask_stack"
 
