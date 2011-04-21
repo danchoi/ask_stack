@@ -9,6 +9,10 @@ used to using Vim and maneuvering in the Unix shell environment.
 
 This project is alpha and is only a proof of concept at this stage.
 
+## Install
+
+    gem install ask_stack
+
 ## Instructions
 
 First you have to fire up an instance of SeleniumRC on your computer.
@@ -63,8 +67,8 @@ is accepted as an OpenID provider.
 
 The `ask_stack.yml` should look like this:
 
-    username: danchoi@gmail.com
-    password: secret
+    username: joelspolsky@gmail.com
+    password: stackoverflowrocks
 
 Now you can try submitting your question like this.
 
