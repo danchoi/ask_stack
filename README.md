@@ -74,5 +74,9 @@ Now you can try submitting your question like this.
 
     ask_stack < question.txt
 
+## Contributing
+
+Please feel free to fork and add to this program. I would love for it to
+be a community effort. Let's defend the command line. 
 
 
