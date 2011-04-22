@@ -10,20 +10,24 @@ class AskStack
   attr_accessor :url, :sel, :browser, :config
   alias :page :browser
 
-  LOGIN_URL = 'http://stackoverflow.com/users/login' 
 
   def initialize(config)
-    @url = LOGIN_URL
+    @domain  = config['domain'] || 'stackoverflow'
+    @url = login_url
     @browser = Selenium::Client::Driver.new \
       :host => "localhost",
       :port => 4444,
       :browser => "*firefox",
-      :url => @url,
+      :url => login_url,
       :timeout_in_second => 60
     browser.start_new_browser_session
     browser.highlight_located_element=true
     browser.set_browser_log_level 'debug'
     @config = config
+  end
+
+  def login_url
+    "http://#{@domain}.com/users/login"
   end
 
   def run
@@ -57,6 +61,8 @@ class AskStack
   end
 
   def login
+    puts "Logging into #{url}"
+    sleep 5
     browser.open url
     puts "Signing in"
     browser.run_script "openid.signin('google')"
@@ -105,6 +111,7 @@ class AskStack
     tags = raw_question.split(/^\s*$/)[-1]
     body = raw_question.split(/^\s*$/)[1..-2].join("\n")
     config[:question] = {title: title, body: body, tags: tags}
+    puts config.inspect
     so = AskStack.new config
     so.run
   end
@@ -119,4 +126,3 @@ end
 if __FILE__ == $0
   AskStack.run
 end
-
